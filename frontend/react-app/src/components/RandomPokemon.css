@@ -1,0 +1,96 @@
+  /* ✅ ページ全体のデザイン */
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffcc00, #ff6699); /* 派手なグラデーション */
+  color: white;
+  font-family: 'Press Start 2P', cursive; /* ポケモン風のフォント */
+}
+
+/* ✅ ボタンのデザイン */
+.fetch-button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ff5722, #ff9800); /* 炎っぽいグラデーション */
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fetch-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.fetch-button:active {
+  transform: scale(0.9);
+}
+
+/* ✅ ポケモンカードのデザイン */
+.pokemon-card {
+  margin-top: 20px;
+  padding: 25px;
+  border: 5px solid;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9); /* 半透明の背景 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+  max-width: 300px;
+  position: relative;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ ポケモンの名前 */
+.pokemon-card h2 {
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ✅ ポケモンの画像 */
+.pokemon-image {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* ✅ ポケモンのタイプ（2つ表示） */
+.pokemon-types {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pokemon-type {
+  padding: 8px 15px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  display: inline-block; /* ✅ 2つ並べて表示 */
+}
+
+/* ✅ ポケモンの画像が軽く浮くアニメーション */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

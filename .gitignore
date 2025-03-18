@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# React build
+dist/
+
+# VSCode
+.vscode/
+
+# 環境変数ファイル
+.env
